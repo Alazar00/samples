@@ -1,0 +1,512 @@
+body{
+  margin: 0;
+  background-color: #ffeae0;
+  margin: 0 100px;
+  }
+  
+  ul li a:hover{
+    text-decoration: underline 3px #ff511c;
+}
+ul li .active::after{
+  content: '';
+  width: 50%;
+  height: 3px;
+  background-color: #ff511c;
+  display: flex;
+  position: relative;
+  margin-left: 10px;
+}
+ul li .active:hover{
+  text-decoration: none;
+}
+.content{
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+}
+.content .content-left{
+  display: block;
+  width: 100%;
+}
+.content .content-left .info{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content .content-left .info h2{
+  font-size: 60px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.content .content-left .info p{
+  font-size: 23px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+.content .content-left button{
+  padding: 10px 23px;
+  background-color: #ff511c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content .content-left button:hover{
+  background-color: #ffffff;
+  color: #ff511c;
+}
+.content .content-right{
+  width: 100%;
+  display: block;
+}
+.content .content-right img{
+  width: 600px;
+  user-select: none;
+  height: auto;
+  position: relative;
+  user-select: none;
+  mix-blend-mode: multiply;
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.category{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.category .list-items{
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+.category .list-items h2{
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 30px;
+}
+.category .card-list{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.list-items .card-list .card{
+  width: 300px;
+  border-radius: 8px;
+  position: relative;
+  outline: 2px solid #faad96;
+  margin: 5px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  box-shadow: 1px 2px 11px 4px #ff511c9f;
+  border: 1px #f16236;
+  backdrop-filter: blur(30px);
+}
+.category .card-list .card img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.category .card-list .card:hover{
+  transform: rotateY('180deg')
+}
+
+.btn{
+  background-color: #ff511c;
+  border-radius: 3rem;
+  padding: 0.2rem 1rem 0.5rem;
+  align-items: center;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: 15%;
+  margin-top: 10%;
+  text-decoration: none;
+  margin-bottom: 0;
+  border: #ff511c;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+  max-width: 160px;
+}
+.btn .bx{
+  padding: 4px;
+  border-radius: 1rem;
+  background: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  margin-top: 5px;
+  
+}
+.btn:hover{
+  opacity: 0.6;
+}
+.category .card-list .card .card-body{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.category .card-list .card .juice-title{
+  padding: 40px 0 10px;
+}
+.category .card-list .card .juice-title h3{
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.category .card-list .card .text-end{
+  align-items: center;
+  flex-grow: 1;
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading h1{
+  font-weight: 600;
+  font-size: 28px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 0;
+}
+.heading span{
+  color: #ff511c;
+}
+.products{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Products-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 30px;
+}
+.Products-container .box{
+  padding: 20px;
+  box-shadow: 1px 2px 11px 4px #faad96;
+  position: relative;
+  border-radius: 0.5rem;
+}
+.Products-container .box img{
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  mix-blend-mode: multiply;
+}
+.Products-container .box span{
+  font-weight: 500;
+  font-size: 13px;
+}
+.Products-container .box h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Products-container .box .price{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #f16236;
+}
+.Products-container .box .price span{
+  color: #000000;
+}
+.Products-container .box .bx-cart-alt{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: #ff511c;
+  font-size: 20px;
+  border-radius: 0.5rem 0 0.5rem 0;
+  color:aliceblue;
+}
+.Products-container .box .bx-cart-alt:hover{
+  background:#da9581;
+  transition: 0.2s all linear;
+}
+.Products-container .box .bx-heart{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 20px;
+  color:#f16236;
+}
+.Products-container .box .discount{
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  background: #f16236;
+  color: aliceblue;
+  padding: 4px 18px;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
+} 
+.about{
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
+  text-align: center;
+  gap: 1.5rem;
+  margin-bottom: 30px;
+}
+.about img{
+  mix-blend-mode: multiply;
+  user-select: none;
+  height: auto;
+  position: relative;
+  user-select: none;
+  width: 100%;
+}
+.about-text{
+  margin-top: 80px;
+  width:100% ;
+}
+.about-text span{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about-text p{
+  font-weight: 500;
+  width: 100%;
+  font-size: 21px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about-text .btn{
+  line-height: 0;
+  margin-top: 0;
+}
+.customers h2{
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.customer-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.customer-container .box{
+  padding: 20px;
+  box-shadow: 1px 2px 11px 4px #ff511c9f;
+  border-radius: 0.5rem;
+  border-bottom: 7px solid #ff511c;
+}
+.customer-container .box:hover{
+  transform: translateY(10px);
+  transition: 0.2s all linear;
+}
+.customer-container .box .bx{
+  font-size: 24px;
+  color: #ff511c;
+}
+.customer-container .box .star .bx{
+  font-size: 1rem;
+  color: #ff511c;
+}
+.customer-container .box p{
+  font-size: 0.938rem;
+}
+.review-profile{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  column-gap: 0.5rem;
+}
+.review-profile img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+} 
+.footer{
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background: #da9581;
+  border-radius: 1rem;
+  padding: 40px 40px 60px 40px;
+}
+.footer-box{
+  display: flex;
+  flex-direction: column;
+}
+.footer-box h2{
+  color: #ff511c;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 23px;
+}
+.footer-box p{
+  font-size: 1.1rem;
+  margin: 1rem 0 1rem;
+}
+.footer-box a{
+  text-decoration: none;
+  color: #302f2f;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
+}
+.footer-box .logo{
+  font-family: cursive;
+  font-weight: bold;
+  color: #ff511c;
+  font-size: 23px;
+}
+.social{
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.social .bx{
+  padding: 10px;
+  background-color: #ff511c;
+  border-radius: 5rem;
+  font-size: 20px;
+  color: #ffffff;
+}
+.social .bx:hover{
+  background-color: #ff511c;
+  color: #ffffff;
+  transition: 0.2s all linear;
+}
+@media (max-width:992px){
+  .content{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .content .content-right img{
+    width: 300px;
+  }
+  .list-items .card-list{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 1.9rem;
+  }
+  .content .content-left .info h2{
+    font-size: 70px;
+    width: 600px;
+  }
+  .content .content-left .info p{
+    font-size: 25px;
+    width: 500px;
+  }
+  .content .content-right img{
+    width: 500px;
+  }
+}
+@media only screen and (max-width:600px){
+
+  body{
+    padding: 0;
+    margin-left: 10px;
+    align-items: center;
+    width: 100%;
+  } 
+   .nav ul{
+  position: absolute;
+  width: 100%;
+  height: 100hv;
+  top: 70px;
+  left: 0;
+  text-align: center; 
+}
+.nav .logo h1{
+  font-size: 30px;
+  padding: 10px;
+  float: left; 
+}
+.nav ul li{
+  display: block;
+  margin: 50px 0;
+}
+.inf0 h1{
+  width: 80%;
+}
+.nav ul li a{
+  font-size: 15px;
+  padding: 10px;
+}
+.content .content-left .info h2{
+  font-size: 30px;
+  width: 200px;
+  margin-left: 70px;
+}
+.content .content-left .info p{
+  width: 250px;
+  margin-left: 40px;
+}
+input{
+  margin-top: 100px;
+}
+.content .content-left button{
+  margin-left: 40px;
+}
+.content .content-right img{
+width: 90%;
+}
+.category .list-items .card-list{
+display: flex;
+flex-direction: column;
+}
+.category .list-items .card-list .card{
+width: 250px;
+margin-bottom: 20px;
+}
+.customer-container .box{
+  width: 90%;
+  text-align: center;
+}
+.Products-container{
+  display: grid;
+  grid-template-columns: 90%;
+}
+.about{
+  text-align: center;
+  margin-right: 0;
+}
+.about-text p{
+  font-size: 18px;
+  width: 90%;
+}
+}
+@media only screen and (max-width:992px){
+   .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.category .list-items{
+   display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+}
+ 

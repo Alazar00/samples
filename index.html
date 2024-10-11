@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheery's Juice</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/day 4/index.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-transparent absolute-top">
+      <div class="container">
+        <a class="navbar-brand fs-4" style="font-weight: 600;
+        font-family: cursive;
+        color: #000000;" href="#">Cheery'<b style="color: #ff511c;">s</b></a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="sidebar offcanvas offcanvas-start" style="background-color: #ffeae0;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header text-black border-bottom">
+            <h5 class="offcanvas-title" style="font-weight: 600;
+            font-family: cursive;
+            color: #000000;" id="offcanvasNavbarLabel">Cheery'<b style="color: #ff511c;">s</b></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 gap-3 flex-grow-1 pe-3">
+              <li class="nav-item active">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center flex-lg-row flex-column align-items-center gap-3">
+              <a href="#login" class="text-black text-decoration-none">Log in</a>
+              <a href="#signup" class="text-white text-decoration-none px-3 py-1 rounded-2"
+              style="background-color: #ff511c;">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="grid">
+        <div class="content">
+        <div class="content-left">
+          <div class="info">
+        <h2>We Rooted in Freshness, Cultivated with Love</h2>
+        <p>Enjoy the taste & nutrition of our organic & pure cheery's flavours in easy and delicious recipes. cheery's is the perfect companion from smoothies, daily nutrition shots, mocktails, cocktails, popsicles and more. We believe that fresh natural organic fruit products should be accessible to all.</p></div>
+        <button>Explore food</button>
+        </div>
+        <div class="content-right">
+          <img src="images/images (10).jpeg">
+        </div>
+      </div>
+    </section>
+    <section class="category">
+      <div class="list-items" class="c0l-md-4 col-6">
+        <h2 style="font-size: 2rem; font-weight: 600; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 30px;">Juice reciepes</h2>
+        <div class="card-list">
+          <div class="card">
+            <img src="images/AdobeStock_129600591-768x512.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Orange Juice</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                style="background-color: #ff511c; border-color: #ff511c;">
+                Shop Now   <i class='bx bx-right-arrow-alt'></i>
+              </button>
+              
+              <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+        </div>
+         </div>
+          </div>
+              </div>
+          </div>
+          <div class="card">
+            <img src="images/images (14).jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Avocado Juice</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                style="background-color: #ff511c; border-color: #ff511c;">
+                Shop Now   <i class='bx bx-right-arrow-alt'></i>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/AdobeStock_89927265-768x512.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Grape Juice</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" 
+                style="background-color: #ff511c; border-color: #ff511c;">
+                Shop Now   <i class='bx bx-right-arrow-alt'></i>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/images (2).jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Lemon Juice</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                style="background-color: #ff511c; border-color: #ff511c;">
+                Shop Now   <i class='bx bx-right-arrow-alt'></i>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  </div>
+      </div>
+    </div>
+  </section>
+  <section class="products" id="products">
+    <div class="heading">
+      <h1>Our Fresh <br><span>Products</span></h1>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+      style="background-color: #ff511c; border-color: #ff511c;">
+      Shop Now   <i class='bx bx-right-arrow-alt'></i>
+    </button>
+    </div>
+    <div class="Products-container">
+
+      <div class="box">
+        <img src="images/appels.jpeg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.96 <span>/kg</span></h3>
+        <i class='bx bx-cart-alt'></i>
+        <i class='bx bx-heart'></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <div class="box">
+        <img src="images/banana.jpeg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.96 <span>/kg</span></h3>
+        <i class='bx bx-cart-alt'></i>
+        <i class='bx bx-heart'></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <div class="box">
+        <img src="images/carrot.jpeg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.96 <span>/kg</span></h3>
+        <i class='bx bx-cart-alt'></i>
+        <i class='bx bx-heart'></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <div class="box">
+        <img src="images/cheeries.jpeg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.96 <span>/kg</span></h3>
+        <i class='bx bx-cart-alt'></i>
+        <i class='bx bx-heart'></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <div class="box">
+        <img src="images/mangos.jpeg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.96 <span>/kg</span></h3>
+        <i class='bx bx-cart-alt'></i>
+        <i class='bx bx-heart'></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <div class="box">
+        <img src="images/strawberries.jpeg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.96 <span>/kg</span></h3>
+        <i class='bx bx-cart-alt'></i>
+        <i class='bx bx-heart'></i>
+        <span class="discount">-25%</span>
+      </div>
+    </div>
+  </section>
+    
+
+    <section class="about" id="about">
+      <img src="images/images (11).jpeg" alt="">
+
+      <div class="about-text">
+        <span>About Us:</span>
+        <p><b>Our Mantra:</b> People never remember what you say only how you make them feel. The philosophy at Cheery's is to make people feel amazing, this all begins with our employees spreading out to our retail partners and ending with the consumer!
+          <br>
+          <br>
+          We strive to provide consumers with the latest tech products at affordable prices. We pride ourselves on centring design & quality in all that we do. We bring boldness & energy to our products making us a brand that consumers buy because they WANT them, not just because they NEED to.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                style="background-color: #ff511c; border-color: #ff511c;">
+                Learn More   <i class='bx bx-right-arrow-alt'></i>
+              </button>
+      </div>
+    </section>
+      
+    <section class="customers" id="customers">
+      <h2>Why customer's Love Us</h2>
+      <div class="customer-container">
+  
+  
+        <div class="box">
+          <i class='bx bxs-quote-alt-left'></i>
+          <div class="stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maxime provident nisi reprehenderit ducimus at quae, voluptatibus placeat. Doloremque perferendis consequatur id? Quas aperiam exercitationem est modi voluptatibus placeat tempora.</p>
+           <div class="review-profile">
+            <img src="images/download.jpeg" alt="">
+            <h3>Tomas Tesfaye</h3>
+           </div>
+        </div>
+  
+        <div class="box">
+          <i class='bx bxs-quote-alt-left'></i>
+          <div class="stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maxime provident nisi reprehenderit ducimus at quae, voluptatibus placeat. Doloremque perferendis consequatur id? Quas aperiam exercitationem est modi voluptatibus placeat tempora.</p>
+           <div class="review-profile">
+            <img src="images/bilen.jpeg" alt="">
+            <h3>Helina Moges</h3>
+           </div>
+        </div>
+        
+        <div class="box">
+          <i class='bx bxs-quote-alt-left'></i>
+          <div class="stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis maxime provident nisi reprehenderit ducimus at quae, voluptatibus placeat. Doloremque perferendis consequatur id? Quas aperiam exercitationem est modi voluptatibus placeat tempora.</p>
+           <div class="review-profile">
+            <img src="images/mike.jpeg" alt="">
+            <h3>Dagim Belay</h3>
+           </div>
+        </div>      
+      </div>
+    </section>
+    <section class="footer container-sm" id="footer">
+        <div class="footer-box" >
+          <a href="#" class="logo"><i class='bx bxs-basket'></i>Jerry's</a>
+          <p>Wello Sefer, 14th Street, Garad bldg<br>2nd Floor, ADDIS ABABA</p>
+          <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <h2>Catagories</h2>
+          <a href="#">Fruits</a>
+          <a href="#">Dairy Products</a>
+          <a href="#">Package Foods</a>
+          <a href="#">Juices</a>
+    
+        </div>
+        <div class="footer-box">
+          <h2>Useful Links</h2>
+          <a href="#">payment and tax</a>
+          <a href="#">Terms of use</a>
+          <a href="#">Blog</a>
+          <a href="#">Return Policy</a>
+    
+        </div>
+        <div class="footer-box">
+          <h2>Newsletter</h2>
+          <p>Get 10% Discount with <br>Email Newsletter</p>
+          <form action="">
+            <i class='bx bxs-envelope'></i>
+            <input type="email" name="" id="" placeholder="Enter your Email">
+            <i class='bx bx-arrow-back bx-rotate-180'></i>
+          </form>
+        </div>
+      </div>
+    
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
